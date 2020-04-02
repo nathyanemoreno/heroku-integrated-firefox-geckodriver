@@ -102,7 +102,7 @@ fi
 topic "Extracting Firefox binaries to ${BUILD_DIR}/vendor/${ARCHIVE_NAME_FIREFOX}"
 mkdir -p $CACHE_DIR/$ARCHIVE_NAME_FIREFOX
 mkdir -p $BUILD_DIR/vendor
-tar jxf $CACHE_DIR/$FILE_NAME_FIREFOX -C $CACHE_DIR
+tar -jxf $CACHE_DIR/$FILE_NAME_FIREFOX -C $CACHE_DIR
 mv $CACHE_DIR/$ARCHIVE_NAME_FIREFOX $BUILD_DIR/vendor/
 
 # Install Geckodriver
